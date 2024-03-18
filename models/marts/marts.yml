@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: fct_vancouver_sales
+    access: public
     description: Table containing the latest years worth of sales data
 
     columns:
