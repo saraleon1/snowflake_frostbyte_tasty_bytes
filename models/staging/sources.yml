@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: tasty_byte
+    database: QUICKSTART  
+    schema: ML_FUNCTIONS
+    tables:
+      - name: TASTY_BYTE_SALES
