@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: fct_vancouver_sales
+    description: Table containing the latest years worth of sales data
+
+    columns:
+      - name: timestamp
+        description: This is the date of sale
+        tests:
+          - not_null
+
+      - name: primary_city
+        description: This is the city of sale
+        tests:
+          - not_null
+
+      - name: menu_item_name
+        description: This is the menu item sold
+        tests:
+          - not_null
+
+      - name: total_sold
+        description: Number of items sold
+        tests:
+          - not_null
