@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_tasty_byte__TASTY_BYTE_SALES
+    description: This model defines the expected columns within the tasty_byte sales source data
+
+    columns:
+      - name: date
+        description: This is the date of sale
+        tests:
+          - not_null
+
+      - name: primary_city
+        description: The city in which the sales took place
+        tests:
+          - not_null
+
+      - name: menu_item_name
+        description: This is the name of the menu item
+        tests:
+          - not_null
+
+      - name: total_sold
+        description: Total count of items sold
+        tests:
+          - not_null
